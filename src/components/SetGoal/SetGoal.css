@@ -1,0 +1,51 @@
+/* SetGoal.css */
+.set-goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c2e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #7f8cff;
+}
+
+.goal-input {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #bbb;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #7f8cff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a74d9;
+}

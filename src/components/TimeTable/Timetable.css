@@ -1,0 +1,123 @@
+/* Main container for the timetable */
+.timetable-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #1c1c2e;
+    min-height: 100vh;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Section to toggle between Personal and Class Timetable */
+.timetable-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.timetable-button {
+    background-color: #7f8cff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    width: 45%;
+    text-align: center;
+    margin: 5px;
+}
+
+.timetable-button.active {
+    border: 2px solid #ffd700;
+}
+
+/* Add task form styling */
+.add-task-form {
+    background-color: #2a2a3d;
+    border-radius: 8px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-task-input {
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* Add task button */
+.add-task-button {
+    background-color: #7f8cff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-task-button:hover {
+    background-color: #6a74d9;
+}
+
+/* Timetable grid styling */
+.timetable-list {
+    background-color: #2a2a3d;
+    border-radius: 8px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.timetable-list h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.timetable-day {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.timetable-day h4 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.timetable-item {
+    font-size: 1em;
+    color: #7f8cff;
+    font-weight: bold;
+    margin: 5px 0;
+}

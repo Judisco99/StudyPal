@@ -1,0 +1,75 @@
+/* src/screens/FirstPage.css */
+
+.first-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite; /* Smoothly transition through colors */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents any overflow during animations */
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.app-name {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    animation: colorChange 4s infinite; /* Apply color-changing animation */
+}
+
+/* Animation for color-changing text */
+@keyframes colorChange {
+    0% { color: #007bff; }
+    25% { color: #ff6347; } /* Tomato */
+    50% { color: #32cd32; } /* Lime green */
+    75% { color: #ff4500; } /* Orange red */
+    100% { color: #007bff; } /* Back to blue */
+}
+
+.tagline {
+    font-size: 1.5em;
+    color: #555;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards; /* Fade-in animation with delay */
+}
+
+/* Fade-in animation for the tagline */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.continue-button {
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2); /* Add subtle shadow */
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.continue-button:active {
+    transform: scale(0.98); /* Pressed effect */
+}

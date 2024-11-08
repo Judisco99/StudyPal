@@ -1,0 +1,101 @@
+.task-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #1c1c2e;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.task-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.toggle-button, .add-task-button {
+    background-color: #7f8cff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover, .add-task-button:hover {
+    background-color: #6a74d9;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a3d;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.task-item .completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.task-item .due-date {
+    font-size: 0.9em;
+    color: #ffd700; /* Highlight upcoming due dates */
+    margin-left: 10px;
+}
+
+.task-item .due-date.expired {
+    color: #ff6b6b; /* Red color for expired tasks */
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-form input[type="text"], .task-form input[type="date"] {
+    padding: 8px;
+    background-color: #2a2a3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.task-form input[type="text"]::placeholder, .task-form input[type="date"]::placeholder {
+    color: #bbb;
+}
+
+.task-form button {
+    background-color: #7f8cff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #6a74d9;
+}
