@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/StudyPal/static/css/main.e13146e2.css",
+    "main.js": "/StudyPal/static/js/main.cbb8bcab.js",
+    "index.html": "/StudyPal/index.html",
+    "main.e13146e2.css.map": "/StudyPal/static/css/main.e13146e2.css.map",
+    "main.cbb8bcab.js.map": "/StudyPal/static/js/main.cbb8bcab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e13146e2.css",
+    "static/js/main.cbb8bcab.js"
+  ]
+}
