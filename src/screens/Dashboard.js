@@ -6,6 +6,7 @@ import { StudyContext } from '../contexts/StudyContext';
 import { TaskContext } from '../contexts/TaskContext';
 import { TimetableContext } from '../contexts/TimetableContext';
 import { useAuth } from '../contexts/AuthContext'; // Import useAuth
+import { FaHome, FaUser } from 'react-icons/fa'; // Correct import for FontAwesome icons
 import './Dashboard.css';
 
 const Dashboard = ({ dailyGoal = 2, weeklyGoal = 10 }) => {

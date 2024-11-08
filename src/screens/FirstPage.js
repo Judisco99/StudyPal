@@ -2,6 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth, provider, signInWithPopup } from '../firebase'; // Import Firebase functions
+import { FaHome, FaUser } from 'react-icons/fa'; // Correct import for FontAwesome icons
 import './FirstPage.css'; // Import CSS for styling
 
 function FirstPage() {
